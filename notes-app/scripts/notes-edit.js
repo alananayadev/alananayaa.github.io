@@ -10,7 +10,7 @@ let note = notes.find(note => {
 })
 
 if (!note) {
-    location.assign('/index.html')
+    location.assign('./index.html')
 }
 
 noteTitle.value = note.title
@@ -34,7 +34,7 @@ noteBody.addEventListener('input', e => {
 removeButton.addEventListener('click', e => {
     removeNote(note.id)
     saveNotes(notes)
-    location.assign('/index.html')
+    location.assign('./index.html')
 })
 
 window.addEventListener('storage', e => {
@@ -45,7 +45,7 @@ window.addEventListener('storage', e => {
         })
 
         if (!note) {
-            location.assign('/index.html')
+            location.assign('./index.html')
         }
         
         noteTitle.value = note.title
