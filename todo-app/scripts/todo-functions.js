@@ -92,14 +92,12 @@ const renderTodos = (todos, filters) => {
         return searchTextMatch && hideCompletedMatch
     })
 
-    if (filteredToDos.length > 0){
-        todoEl.innerHTML = ''
-        const summary = generateSummaryDOM(filteredToDos)
-        todoEl.appendChild(summary)
+    todoEl.innerHTML = ''
+    todoEl.appendChild(generateSummaryDOM(filteredToDos))
 
+    if (filteredToDos.length > 0){
         filteredToDos.forEach(todo => {
-            const todoElement = generateTodoDOM(todo)
-            todoEl.appendChild(todoElement)
+            todoEl.appendChild(generateTodoDOM(todo))
         });
     }else {
         const emptyTodos = document.createElement('p')
