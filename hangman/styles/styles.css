@@ -72,3 +72,8 @@ p {
 .button:hover {
     background: #5F3A87;
 }
+
+.explanation {
+    margin-top: 20px;
+    font-size: 0.8em
+}

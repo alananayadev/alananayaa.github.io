@@ -26,7 +26,7 @@ const render = () => {
 }
 
 const startGame = async () => {
-    const puzzle = await getPuzzle('2')
+    const puzzle = await getPuzzle('1')
     newGame = new Hangman(puzzle, 5)
     render()
 }
