@@ -41,6 +41,22 @@ a {
     color: #6F439C;
 }
 
+.return {
+    background-color: #2B292ECB;
+    color: white;
+    position: fixed;
+    top:10px;
+    left: 5px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.return:hover {
+    background-color: #413f3fcb;
+}
+
 /* Container */
 
 .container {

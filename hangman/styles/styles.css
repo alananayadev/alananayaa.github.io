@@ -36,6 +36,22 @@ p {
     margin-bottom: .8rem;
 }
 
+.return {
+    background-color: #474747cb;
+    color: white;
+    position: fixed;
+    top:10px;
+    left: 5px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.return:hover {
+    background-color: #666666cb;
+}
+
 .puzzle {
     display: flex;
     margin-bottom: 4.8rem;
