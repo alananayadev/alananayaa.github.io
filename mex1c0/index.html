@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEX1C0 - 10 Digitos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="images/navicon.png">
+      </a>
+
+      <a role="button" class="navbar-burger burger" id="navMenu" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu" id="navContact">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="navbar-item" href="mailto:anaya.araujo@icloud.com">
+            Contacto
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-fullheight-with-navbar is-success">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="app-info">
+          <h1 class="title is-2">
+            Corrige o añade la LADA a tus contactos de una manera rápida y sencilla
+          </h1>
+          <h2 class="subtitle is-4">
+            MEX1C0 es una aplicación móvil que te ayuda a corregir toda la lista de tus contactos para que cumplan con
+            la nueva marcación a 10 dígitos
+          </h2>
+          <h2 class="subtitle is-4">♡ Elaborado con Swift (versión iOS) y Kotlin (versión Android aun en construcción)
+          </h2>
+          <div>
+            <h5 class="is-6"></h5>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column"></div>
+            <div class="column is-one-quarter">
+              <img src="images/appstore.png" alt="">
+            </div>
+            <div class="column is-one-quarter">
+              <img src="images/wipAndroid.png" alt="">
+            </div>
+            <div class="column"></div>
+          </div>
+        </div>
+        <div>
+          <img src="images/mockup.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-medium">
+    <div class="hero-body">
+      <div class="container content is-medium">
+        <h1 class="">A partir del 3 de agosto del 2020 en México se hizo obligatorio realizar la marcación a 10 dígitos
+          para simplificar la manera de comunicarnos en todo el país.</h1>
+        <ul class="">
+          <li>Para la nueva marcación será necesario marcar con la LADA de la ciudad a donde llamas. Ejemplo:<br>
+            <strong>Antigua marcación:</strong> 12 34 56 78 --> <strong>Nueva marcación:</strong> (33) 1234 5678
+          </li>
+          <li>Además de la nueva marcación ya no será necesario agregar <strong>044</strong> ó <strong>045</strong> para
+            llamadas a celular dentro de la república.</li>
+          <li>Para las líneas que son <strong>01800</strong> para poder llamar tenemos que remover el
+            <strong>01</strong> para realizar la llamada.
+          </li>
+          <li>En caso de llamar desde el extranjero, solo requeriremos agregar <strong>+52 + 10 digitos</strong> en
+            lugar de <strong>+521 + 10 digitos</strong> en caso de telefono celular</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-danger is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Principales Caracteristicas:</h1>
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-parent">
+            <div class="tile is-child box">
+              <p class="title has-text-black">Revisa toda tu lista de contactos.</p>
+              <p>Unicamente te pedimos acceso para revisar tus contactos de manera local, ningun dato es enviado a
+                traves de internet ya que esta es una app offline. Después de revisar tu lista te dira la cantidad de
+                contactos por corregir para cumplir con la nueva marcación.</p>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent">
+            <div class="tile is-child box">
+              <p class="title has-text-black">Añade la LADA a tus contactos.</p>
+              <p>Puedes añadir la LADA que quieras agregar a tus contactos de dos maneras, seleccionando desde la lista
+                de Estado y Municipio o agregarlo de manera manual.</p>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent">
+            <div class="tile is-child box">
+              <p class="title has-text-black">Buscador de LADA.</p>
+              <p>El buscador de LADA nos deja buscar un numero de teléfono de forma en la que nos muestra
+                aproximadamente la zona o ciudad donde estas recibiendo la llamada, la cual es totalmente manual para
+                evitar rastreos de llamadas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>MEX1C0</strong> es una aplicación móvil elaborada por <a href="https://alananayaa.github.io/">Alan Anaya
+          Araujo</a>.
+      </p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          })
+        })
+      }
+    })
+  </script>
+</body>
+</html>
