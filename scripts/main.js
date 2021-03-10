@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   }); // initialize animate on scroll library
 
-  let age = new Date().getFullYear() - 1994
+  let age = new Date().getFullYear() - 1995
   document.querySelector("#age").innerHTML = age 
 });
 
