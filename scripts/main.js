@@ -5,6 +5,9 @@ $(document).ready(function() {
   AOS.init( {
 
   }); // initialize animate on scroll library
+
+  let age = new Date().getFullYear() - 1994
+  document.querySelector("#age").innerHTML = age 
 });
 
 // Smooth scroll for links with hashes
