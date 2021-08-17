@@ -2,8 +2,7 @@
 // Don't forget to add it into respective layouts where this js file is needed
 
 $(document).ready(function() {
-  let copyrightText = document.querySelector("#copyright")
-  copyrightText.textContent = `&copy; ${moment().format("YYYY")} - Alan Anaya Araujo`
+  document.querySelector("#copyright").textContent = `\u00A9 ${moment().format("YYYY")} - Alan Anaya Araujo`
   AOS.init( {
 
   }); // initialize animate on scroll library
