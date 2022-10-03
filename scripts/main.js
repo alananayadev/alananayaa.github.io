@@ -8,7 +8,7 @@ $(document).ready(function() {
   }); // initialize animate on scroll library
 
   let age = new Date().getFullYear() - 1995
-  document.querySelector("#age").innerHTML = age 
+  document.querySelector("#age").innerHTML = age
 });
 
 // Smooth scroll for links with hashes
@@ -16,8 +16,8 @@ $('a.smooth-scroll')
 .click(function(event) {
   // On-page links
   if (
-    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-    && 
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
     location.hostname == this.hostname
   ) {
     // Figure out element to scroll to
