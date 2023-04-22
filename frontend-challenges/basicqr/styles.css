@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit";
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    height: 460px;
+    border-radius: 25px;
+    position: absolute; /*Can also be `fixed`*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 20px 0px rgba(80, 80, 80, 0.35);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(80, 80, 80, 0.35);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(80, 80, 80, 0.35);
+}
+
+.card > img {
+    width: 90%;
+    padding: 5%;
+    border-radius: 25px;
+    margin-bottom: -20px;
+}
+
+.card > h3 {
+    font-size: 1.2em;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%)
+}
+
+.card > p {
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+    margin-top: -10px;
+}

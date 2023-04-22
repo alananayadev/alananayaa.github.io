@@ -9,23 +9,6 @@ $(document).ready(function() {
 
   let age = new Date().getFullYear() - 1995
   document.querySelector("#age").innerHTML = age
-  document.querySelector("#submitButton").addEventListener("click", event => {
-    event.preventDefault()
-    let data = new FormData()
-    data.append("name", document.querySelector("input[name='name']").value)
-    data.append("subject", document.querySelector("input[name='subject']").value)
-    data.append("email", document.querySelector("input[name='email']").value)
-    data.append("message", document.querySelector("textarea[name='message']").value)
-    fetch("https://alananayadev.com/scripts/sendEmail.php", {
-      method: "POST",
-      body: data
-    })
-    .then(response => response.json())
-    .then(result => {
-      document.querySelector("#modalMessage").innerHTML = result.message
-      $('#mailModal').modal()
-    })
-  })
 });
 
 // Smooth scroll for links with hashes
