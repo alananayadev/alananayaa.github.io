@@ -8,6 +8,7 @@ $(document).ready(function() {
   }); // initialize animate on scroll library
 
   let age = new Date().getFullYear() - 1995
+  document.querySelector("#experience").innerHTML = age - 21
   document.querySelector("#age").innerHTML = age
   document.querySelector("#submitButton").addEventListener("click", event => {
     event.preventDefault()
