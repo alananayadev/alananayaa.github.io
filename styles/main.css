@@ -3136,11 +3136,7 @@ body {
 }
 
 .btn-twitter {
-  color: #55acee;
-}
-
-.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active {
-  color: #3ea1ec;
+  margin-top: 28px;
 }
 
 .btn-facebook {
@@ -7277,7 +7273,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .cv-twitter:hover i {
-  color: #1da1f2;
+  color: #000;
 }
 
 .cv-github:hover i {
@@ -7285,7 +7281,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .cv-instagram:hover i {
-  color: #405de6;
+  color: #833AB4;
 }
 
 /* Credit Style */
